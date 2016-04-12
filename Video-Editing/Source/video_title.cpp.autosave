@@ -1,0 +1,21 @@
+/*
+*该函数功能:标题栏功能功能函数.
+*/
+#include "video_title.h"
+
+Video_title::Video_title(QWidget *parent) : QFrame(parent)
+{
+    this->setFixedHeight(30);
+    
+    this->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
+    this->setAutoFillBackground(true);
+    QPalette palette;
+    palette.setColor(QPalette::Background, QColor(185,185,185));  //设置主界面的背景色为白色
+    this->setPalette(palette);
+}
+
+Video_title::~Video_title()
+{
+
+}
+
